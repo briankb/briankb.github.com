@@ -1,4 +1,4 @@
-# Classic ASP Func n Junk
+# Classic ASP Links
 
 This is a collection of Classic ASP (VBScript) classes, functions, and helpful scripts.
 
