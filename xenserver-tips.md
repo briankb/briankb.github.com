@@ -7,3 +7,6 @@ the default ISO folder is located  at /opt/xensource/packages/iso
 An iSCSI that's local to the datacenter is ok but anything else just isn't fast enough.
 
 * you must create storage resources from RAID arrays correctly in order for them to work. This wasn't my mistake but something I learned from Tech Support.
+
+* list of mirrored Linux distros on SoftLayer's Network
+  * http://mirrors.service.softlayer.com/
