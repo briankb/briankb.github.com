@@ -15,4 +15,10 @@ An iSCSI that's local to the datacenter is ok but anything else just isn't fast 
   * For your networking question you just have to assign the "Virtual Interfaces" in xencenter, so for example, eth0 and eth1 for private and public network.  Then all you should need to do is bind the IP in the OS, and XenServer will detect the IP you are using and show it in XenCenter for Networking on that VM
 
 * create ISO directory
-  * ```xe sr-create name-label="MyISORepository" type=iso device-config:location=/var/opt/xen/iso_import/ device-config:legacy_mode=true content-type=iso```
+  * > "xe sr-create name-label="MyISORepository" type=iso device-config:location=/var/opt/xen/iso_import/ device-config:legacy_mode=true content-type=iso"
+  * > "The easiest way is to use "xe pbd-unplug" and then "xe pbd-plug". This will refresh the SR by forcing it to be reread into the XAPI database. To get the universal unique Id of the PBD, please use a command similiar to the following:
+xe pbd-list sr-uuid= <UUID of the SR>
+Then proceed to use:
+xe pbd-unplug uuid=< UUID of the PBD
+xe pbd-plug uuid=< UUID of the PBD>"
+
