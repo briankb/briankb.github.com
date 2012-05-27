@@ -13,3 +13,6 @@ An iSCSI that's local to the datacenter is ok but anything else just isn't fast 
 
 * adding ip's
   * For your networking question you just have to assign the "Virtual Interfaces" in xencenter, so for example, eth0 and eth1 for private and public network.  Then all you should need to do is bind the IP in the OS, and XenServer will detect the IP you are using and show it in XenCenter for Networking on that VM
+
+* create ISO directory
+  * ```xe sr-create name-label="MyISORepository" type=iso device-config:location=/var/opt/xen/iso_import/ device-config:legacy_mode=true content-type=iso```
