@@ -43,5 +43,14 @@ xe pbd-plug uuid=< UUID of the PBD>"
 * [RedHat LVM Docs](http://docs.redhat.com/docs/en-US/Red_Hat_Enterprise_Linux/5/pdf/Logical_Volume_Manager_Administration/Red_Hat_Enterprise_Linux-5-Logical_Volume_Manager_Administration-en-US.pdf)
 
 ### General Linux Tips & Commands
+* scp - secure file transfer between servers
+* wget - command line file downloader and spider
+* ln -s - create a symbolic link between source and link-name
+* 
 * [The Ultimate Wget Download Guide With 15 Awesome Examples](http://www.thegeekstuff.com/2009/09/the-ultimate-wget-download-guide-with-15-awesome-examples/)
 * [How to list or find the largest files and directories-folders, Free disk space](http://www.go2linux.org/linux/2010/11/how-list-or-find-largest-files-and-directories-folders-linux-free-disk-space-850)
+
+### scp and WinSCP are your new best friend!
+* waisted 30m trying to resolve a permissions is to transfer a ISO from one server to the other then I found an article describing scp to do it...
+* scp my-local-file.iso root@10.10.10.1:/usr/jj/my-local-file.iso
+* didn't even setup a SSH key just used root and it prompted for password. DONE!
